@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_background"
+    android:gravity="center_horizontal"
+   >
+
+
+
+    <!-- Top Image -->
+    <ImageView
+        android:id="@+id/topImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/star_image"
+        android:layout_gravity="center"
+        android:contentDescription="Star Emoji" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How Would You Rate Our App Experience?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Rating Bar -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="3"
+        android:progressTint="#ffc351"
+        android:progressBackgroundTint="#cfd4dc"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Message Input -->
+    <EditText
+        android:id="@+id/commentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add a comment..."
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginHorizontal="50dp"
+        android:backgroundTint="#097bed"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp" />
+
+    <!-- No Thanks Text -->
+    <TextView
+        android:id="@+id/noThanksText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No, Thanks!"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>
